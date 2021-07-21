@@ -329,11 +329,13 @@ nav {
   width: 100%;
   background-color: #1c1d25;
   opacity: 0;
-  transition: opacity 450ms ease;
+  transition: all 450ms ease;
   z-index: 2;
+  transform: translateY(100%);
 }
 .project:hover .project__wrapper:before {
   opacity: 0.7;
+  transform: translateY(0);
 }
 .project:hover .project__img {
   transform: scale(1.07);
