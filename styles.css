@@ -329,12 +329,10 @@ nav {
   width: 100%;
   background-color: #1c1d25;
   opacity: 0;
-  transition: all 450ms ease;
+  transition: opacity 450ms ease;
   z-index: 2;
-  transform: translateY(100%);
 }
 .project:hover .project__wrapper:before {
-  transform: translateY(0);
   opacity: 0.7;
 }
 .project:hover .project__img {
@@ -466,10 +464,6 @@ footer {
 @media (max-width: 480px) {
   .nav__link:not(:last-child) {
     display: none;
-  }
-
-  .project__wrapper {
-    border-radius: 0;
   }
 
   .project__description {
